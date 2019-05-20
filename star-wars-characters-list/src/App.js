@@ -6,7 +6,7 @@ import "./App.css";
 class App extends Component {
   state = {
     employees: [],
-    url: "https://swapi.co/api/people"
+    url: "https://swapi.co/api/people", 
   };
 
   getCharacters = async () => {
@@ -16,7 +16,7 @@ class App extends Component {
       console.log(jsonData);
       this.setState({
         employees: jsonData.results
-      });
+      })
     } catch (error) {
       console.log(error);
     }
@@ -27,7 +27,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.employees);
     return (
       <div className="App">
         <Header />

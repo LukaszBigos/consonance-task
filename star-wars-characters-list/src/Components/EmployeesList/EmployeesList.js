@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
+import Employee from "../Employee/Employee";
 
-export default function EmployeesList(props) {
-  const { employees } = props;
-  return (
-    <div>
-      {employees.map(employee => {
-        return (<p>{employee.name}</p>);
-      })}
-    </div>
-  )
+export default class EmployeesList extends React.Component {
+  render() {
+    const { employees } = this.props;
+    return (
+      <div>
+        {employees.map(employee => {
+          return <Employee key={employee.name} employee={employee} />;
+        })}
+      </div>
+    );
+  }
 }
