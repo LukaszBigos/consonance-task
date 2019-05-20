@@ -1,0 +1,18 @@
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-container h1 {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.header-container img {
+  transform: rotate(211.5deg);
+  width: 60vw;
+  margin-top: -100px;
+}
