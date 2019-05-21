@@ -1,6 +1,6 @@
 import React from "react";
 import "./Employee.css";
-import redSaber from "../../assets/red-saber.png";
+import redSaber from "../../assets/blue-sword.png";
 
 export default class EmployeesDetails extends React.Component {
   state = {
@@ -53,7 +53,7 @@ export default class EmployeesDetails extends React.Component {
         >
           {this.state.showDetails && details}
         </div>
-        <img src={redSaber} alt="red flash saber" />
+        <img src={redSaber} alt="red flash saber" className="red"/>
       </div>
     );
   }
