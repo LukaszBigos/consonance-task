@@ -1,14 +1,12 @@
 .employee-wrapper {
-  /* margin: 1.5rem; */
   padding: 1rem;
   z-index: 2;
   color: #55646c;
-  font-size: 0.8rem;;
+  font-size: 0.6rem;;
   text-align: center;
 }
 
 .employee-wrapper > p {
-  padding-left: 9vw;
   letter-spacing: 0.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -27,7 +25,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
   height: 100%;
   opacity: 1;
   transition: all 0.6s ease;
@@ -40,8 +38,8 @@
 }
 
 .square {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   box-shadow: 0px 0px 2px 0px rgb(19, 19, 20);
   background: linear-gradient(
       to top left,
@@ -65,9 +63,8 @@
 .red {
   width: 70%;
   height: auto;
-  -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
-  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
   transform: rotate(180deg);
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
 }
 
 .employee-wrapper img {
@@ -77,6 +74,10 @@
 @media(min-width: 500px) {
   .employee-wrapper{
     font-size: 0.8rem;
+  }
+  .square {
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -102,7 +103,7 @@
 
 @media(min-width: 1200px) {
   .employee-wrapper {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .square {
     width: 110px;
@@ -112,7 +113,7 @@
 
 @media(min-width: 1500px) {
   .employee-wrapper {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .square {
     width: 120px;

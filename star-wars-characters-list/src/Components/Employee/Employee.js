@@ -48,12 +48,12 @@ export default class EmployeesDetails extends React.Component {
         <div
           className={
             "details-container " +
-            (this.state.showDetails ? "details-shown" : 'details-hidden')
+            (this.state.showDetails ? "details-shown" : "details-hidden")
           }
         >
           {this.state.showDetails && details}
         </div>
-        <img src={redSaber} alt="red flash saber" className="red"/>
+        <img src={redSaber} alt="red flash saber" className="red" />
       </div>
     );
   }

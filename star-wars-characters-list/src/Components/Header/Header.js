@@ -9,7 +9,6 @@ export default function Header() {
   return (
     <div className="header-container">
       <h1>Employees list</h1>
-      <img src={ligthPower} alt="Luke's sword"></img>
     </div>
   )
 }
