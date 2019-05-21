@@ -2,17 +2,18 @@ import React from "react";
 import "./Employee.css";
 import redSaber from "../../assets/red-saber.png";
 
-
 export default class EmployeesDetails extends React.Component {
   state = {
     showDetails: false
   };
 
-  toggleDetails = () => {
+  toggleDetails() {
+    // const detailsContainer = document.querySelector(".container");
+    // detailsContainer.classList.toggle("details-shown");
     this.setState({
       showDetails: !this.state.showDetails
     });
-  };
+  }
 
   render() {
     const {
@@ -27,7 +28,7 @@ export default class EmployeesDetails extends React.Component {
     } = this.props.employee;
 
     const details = (
-      <div className="details-container">
+      <React.Fragment>
         <div>
           <p>Height: {height}</p>
           <p>Mass: {mass}</p>
@@ -40,16 +41,21 @@ export default class EmployeesDetails extends React.Component {
           <p>Eye: {eye_color}</p>
         </div>
         <div className="square" />
-      </div>
+      </React.Fragment>
     );
 
     return (
-      <div>
-        <p onClick={this.toggleDetails}>
-          {name} 
-        </p>
-        {this.state.showDetails && details}
-        <img src={redSaber} alt="red flash saber"/>
+      <div className="employee-wrapper">
+        <p onClick={() => this.toggleDetails()}>{name}</p>
+        <div
+          className={
+            "details-container " +
+            (this.state.showDetails ? "details-shown" : 'details-hidden')
+          }
+        >
+          {this.state.showDetails && details}
+        </div>
+        <img src={redSaber} alt="red flash saber" />
       </div>
     );
   }

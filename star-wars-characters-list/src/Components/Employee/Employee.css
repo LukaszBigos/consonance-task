@@ -1,8 +1,26 @@
+.employee-wrapper {
+  padding: 1rem;
+}
+
 .details-container {
-  padding: 2rem;
+  opacity: 0;
+  height: 0;
+}
+
+.details-shown {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem;
+  height: 100%;;
+  opacity: 1;
+  transition: all 0.6s ease;
+}
+
+.details-hidden {
+  opacity: 0;
+  height: 0;
+  transition: all 0.6s ease;
 }
 
 .square {
