@@ -2,17 +2,20 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto 5rem auto;
+  overflow: hidden;
 }
 
 .header-container h1 {
-  margin-left: 2rem;
+  margin: 2rem;
   font-size: 1.2rem;
 }
 
 .header-container img {
+  position: absolute;
   transform: rotate(211.5deg);
-  width: 60vw;
-  margin-top: -100px;
+  width: 60%;
+  top: -156px;
+  /* overflow: hidden; */
 }

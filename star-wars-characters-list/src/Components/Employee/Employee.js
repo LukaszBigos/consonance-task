@@ -8,8 +8,6 @@ export default class EmployeesDetails extends React.Component {
   };
 
   toggleDetails() {
-    // const detailsContainer = document.querySelector(".container");
-    // detailsContainer.classList.toggle("details-shown");
     this.setState({
       showDetails: !this.state.showDetails
     });
