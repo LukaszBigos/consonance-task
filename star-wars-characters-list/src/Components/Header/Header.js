@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-import ligthPower from '../../assets/luke-sword.png';
+import ligthPower from '../../assets/blue-sword.png';
 
 
 

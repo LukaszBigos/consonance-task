@@ -2,20 +2,42 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 1200px;
-  margin: 0 auto 5rem auto;
+  width: 95%;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 .header-container h1 {
-  margin: 2rem;
-  font-size: 1.2rem;
+  margin: 2rem 0 0 2rem;;
+  font-size: 1rem;
+}
+
+@media(min-width: 500px) {
+  .header-container h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media(min-width: 800px) {
+  .header-container h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media(min-width: 1200px) {
+  .header-container h1 {
+    font-size: 1.8rem;
+    margin-left: 3rem;
+  }
+}
+
+@media(min-width: 1500px) {
+  .header-container h1 {
+    font-size: 2rem;
+    margin-left: 4rem;
+  }
 }
 
 .header-container img {
-  position: absolute;
-  transform: rotate(211.5deg);
-  width: 60%;
-  top: -156px;
-  /* overflow: hidden; */
+  width: 100%;
 }
