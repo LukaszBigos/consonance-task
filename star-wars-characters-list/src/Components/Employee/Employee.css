@@ -1,12 +1,15 @@
 .employee-wrapper {
-  text-align: center;
+  /* margin: 1.5rem; */
   padding: 1rem;
   z-index: 2;
   color: #55646c;
-  font-size: 1.2rem;;
+  font-size: 0.8rem;;
+  text-align: center;
 }
 
-.employee-wrapper p {
+.employee-wrapper > p {
+  padding-left: 9vw;
+  letter-spacing: 0.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -22,7 +25,7 @@
 
 .details-shown {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1.5rem;
   height: 100%;
@@ -37,8 +40,8 @@
 }
 
 .square {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   box-shadow: 0px 0px 2px 0px rgb(19, 19, 20);
   background: linear-gradient(
       to top left,
@@ -57,4 +60,54 @@
       rgba(43, 57, 65, 0) 100%
     );
   background-color: #1e2a31;
+}
+
+.employee-wrapper img {
+  width: 95%;
+}
+
+@media(min-width: 500px) {
+  .employee-wrapper{
+    font-size: 0.8rem;
+  }
+}
+
+@media(min-width: 600px) {
+  .employee-wrapper{
+    font-size: 1rem;
+  }
+.square {
+  width: 80px;
+  height: 80px;
+}
+}
+
+@media(min-width: 800px) {
+  .employee-wrapper {
+    font-size: 1.3rem;
+  }
+  .square {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .employee-wrapper {
+    font-size: 1.8rem;
+  }
+  .square {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media(min-width: 1500px) {
+  .employee-wrapper {
+    font-size: 2rem;
+  }
+  .square {
+    width: 120px;
+    height: 120px;
+  }
 }
